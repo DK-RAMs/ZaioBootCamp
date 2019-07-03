@@ -1,0 +1,72 @@
+/**************************************
+*** Zaio Javascript Challenge: CSS file
+*** Dikabelo Ramashala
+*** 2nd July 2019
+***************************************/
+
+*{
+    font-family: arial;
+}
+
+.color-val{
+    font-weight: lighter;
+}
+
+
+#blue-heading{
+    color: blue;
+}
+
+#green-heading{
+    color: green;
+}
+
+#red-heading{
+    color: red;
+}
+
+#color-buttons{
+    background-color: beige;
+    height: 240px;
+    width: 280px;
+    float: left;
+    display: inline;
+    margin: 40px;
+}
+
+#color-buttons h3:hover{
+    cursor: pointer;
+}
+
+
+
+#color-box{
+    height: 240px;
+    width: 280px;
+    float: left;
+    display: inline;
+    margin: 37px;
+}
+
+#page-content{
+    margin: 100px;
+}
+
+#color-box{
+    border: solid;
+}
+
+#color-buttons h3{
+    padding: 3px;
+    margin: 35px;
+    padding-left: 28%;
+    background-color: white;
+    border: solid;
+    border-color: grey;
+    border-width: 2px;
+}
+
+.color-box-string{
+    display: none;
+    margin: 65px 58px;
+}
