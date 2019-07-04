@@ -4,7 +4,7 @@
 *** 2nd July 2019
 *******************************************/
 
-
+/** Calculates ASCII color*/
 function calculateASCII(color) {
     var asnum = 0;
     for (var i = 0; i < color.length; i++) {
@@ -13,27 +13,19 @@ function calculateASCII(color) {
     document.getElementById("color-box").style.backgroundColor = color.toLowerCase();
     document.getElementsByTagName("strong")[0].textContent = color;
     document.getElementsByTagName("strong")[1].textContent = asnum;
-    var x = document.getElementsByClassName("color-box-string");
+    let x = document.getElementsByClassName("color-box-string");
     for(var i = 0; i < x.length; i++){
         x[i].style.display = "inherit";
     }
 }
 
+/** Binds all events to relative h3 boxes*/
 
-var colorbuttons = document.getElementsByClassName("buttons");
+var arr = document.getElementsByTagName("h3");
 
-
-colorbuttons[0].getElementsByTagName("h3")[0].onclick = function(){
-    calculateASCII(colorbuttons[0].getElementsByTagName("h3")[0].innerHTML);
-    
-};
-
-colorbuttons[1].getElementsByTagName("h3")[0].onclick = function(){
-    calculateASCII(colorbuttons[1].getElementsByTagName("h3")[0].innerHTML);
-    
-};
-
-colorbuttons[2].getElementsByTagName("h3")[0].onclick = function(){
-    calculateASCII(colorbuttons[2].getElementsByTagName("h3")[0].innerHTML);
-    
-};
+for(let x = 0; x < arr.length; x++){
+    alert(arr[x].innerHTML);
+    arr[x].onclick = function(){
+        calculateASCII(arr[x].innerHTML);
+    }
+}
