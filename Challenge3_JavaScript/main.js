@@ -24,7 +24,6 @@ function calculateASCII(color) {
 var arr = document.getElementsByTagName("h3");
 
 for(let x = 0; x < arr.length; x++){
-    alert(arr[x].innerHTML);
     arr[x].onclick = function(){
         calculateASCII(arr[x].innerHTML);
     }
